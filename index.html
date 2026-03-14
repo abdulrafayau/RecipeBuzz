@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RecipeBuzz — Recipe Finder</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">✦</span>
+        <span class="logo-text">Recipe<em>Buzz</em></span>
+      </div>
+      <nav>
+        <a href="#home" class="nav-link active" data-section="home">Home</a>
+        <a href="#recipes" class="nav-link" data-section="recipes">Recipes</a>
+        <a href="#favorites" class="nav-link" data-section="favorites">
+          Favorites
+          <span class="fav-badge" id="favBadge">0</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="section-hero">
+    <div class="hero-content">
+      <p class="hero-tag">Discover · Cook · Savour</p>
+      <h1 class="hero-title">Find Your<br /><em>Perfect</em> Recipe</h1>
+      <p class="hero-sub">Search by ingredient, category, or mood. Every dish tells a story.</p>
+      <a href="#search" class="hero-btn">Start Exploring ↓</a>
+    </div>
+
+    <div class="hero-art">
+      <div class="art-circle c1"></div>
+      <div class="art-circle c2"></div>
+      <div class="art-square s1"></div>
+      <div class="art-line l1"></div>
+      <div class="art-line l2"></div>
+      <div class="art-dot d1"></div>
+      <div class="art-dot d2"></div>
+      <div class="art-dot d3"></div>
+      <div class="art-bowl">🥗</div>
+    </div>
+  </section>
+
+  <section id="search" class="section-search">
+    <div class="section-label">— Search Panel —</div>
+    <h2 class="section-title">What are you craving?</h2>
+
+    <div class="search-bar-wrap">
+      <input
+        type="text"
+        id="searchInput"
+        class="search-input"
+        placeholder="Type an ingredient or recipe name…"
+        autocomplete="off"
+      />
+      <button id="searchBtn" class="search-btn">Search</button>
+      <button id="clearBtn" class="clear-btn">✕</button>
+    </div>
+
+    <div class="category-filters">
+      <span class="filter-label">Filter by:</span>
+      <label class="chip"><input type="checkbox" value="Breakfast" /> Breakfast</label>
+      <label class="chip"><input type="checkbox" value="Lunch" /> Lunch</label>
+      <label class="chip"><input type="checkbox" value="Dinner" /> Dinner</label>
+      <label class="chip"><input type="checkbox" value="Dessert" /> Dessert</label>
+      <label class="chip"><input type="checkbox" value="Snack" /> Snack</label>
+    </div>
+
+    <div id="searchMessage" class="search-message"></div>
+  </section>
+
+  <section id="recipes" class="section-recipes">
+    <div class="section-label">— Recipe Results —</div>
+    <h2 class="section-title">All Recipes</h2>
+    <div class="recipe-grid" id="recipeGrid">
+
+    </div>
+  </section>
+
+  <section id="favorites" class="section-favorites">
+    <div class="section-label">— Your Collection —</div>
+    <h2 class="section-title">Favorites</h2>
+    <div class="favorites-empty" id="favEmpty">
+      <div class="empty-icon">♡</div>
+      <p>No favorites yet. Add recipes you love!</p>
+    </div>
+    <div class="favorites-grid" id="favGrid">
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">✦ Food<em>Fusion</em></div>
+      <p class="footer-copy">© 2025 RecipeBuzz. Crafted with love &amp; garlic.</p>
+      <div class="footer-links">
+        <a href="mailto:abdulrafaydevau@gmail.com">abdulrafaydevau@gmail.com</a>
+        <span>·</span>
+        <a href="#">Privacy</a>
+        <span>·</span>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="modalOverlay" class="modal-overlay">
+    <div class="modal-card" id="modalCard">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
