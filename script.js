@@ -1,16 +1,7 @@
 const recipes = [
-  { id:1,  name:"Halwa Puri", category:"Breakfast", time:"40 min", 
-    image:"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Halwa_Puri_Channay.jpg/800px-Halwa_Puri_Channay.jpg",
-    ingredients:["all-purpose flour","semolina","sugar","chickpeas","potatoes","ghee","spices"],
-    instructions:"Knead dough for puris and fry until puffed. Make sweet semolina halwa with sugar syrup. Prepare spicy chickpea (chana) and potato (aloo) curry. Serve hot together.",
-    reviews: [
-      { author: "Ali R.", rating: 5, text: "Absolutely authentic and delicious! Sunday morning staple." },
-      { author: "Fatima S.", rating: 4.5, text: "Very good, reminds me of Anarkali. Chana was perfectly spiced." },
-      { author: "Usman K.", rating: 4, text: "Great taste, puris were perfectly crispy and soft inside." }
-    ]
-  },
+  
   { id:2,  name:"Aloo Paratha", category:"Breakfast", time:"25 min",
-    image:"https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Aloo_Paratha_also_known_as_Batatay_Jo_Phulko.jpg/800px-Aloo_Paratha_also_known_as_Batatay_Jo_Phulko.jpg",
+    image:"https://static.vecteezy.com/system/resources/previews/054/624/393/non_2x/potato-stuffed-flat-bread-aloo-paratha-traditional-indian-food-wooden-background-top-view-photo.jpg",
     ingredients:["whole wheat flour","potatoes","green chilies","coriander","cumin","butter"],
     instructions:"Boil and mash potatoes, mix with spices and herbs. Stuff inside rolled dough, seal, and roll again. Cook on a hot tawa with butter until golden brown.",
     reviews: [
@@ -19,18 +10,9 @@ const recipes = [
       { author: "Sana A.", rating: 4, text: "Loved the crispy edges and generous filling." }
     ]
   },
-  { id:3,  name:"Chapli Kebab", category:"Lunch", time:"30 min",
-    image:"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Chapli_Kebab.jpg/800px-Chapli_Kebab.jpg",
-    ingredients:["minced beef","tomatoes","onions","coriander seeds","pomegranate seeds","wheat flour"],
-    instructions:"Mix minced meat with chopped veggies and dry spices. Form into flat, round patties. Shallow fry in hot oil until crispy on the outside and juicy inside.",
-    reviews: [
-      { author: "Hamza T.", rating: 5, text: "True Peshawari taste! The anardana crunch is perfect." },
-      { author: "Ayesha N.", rating: 4.5, text: "Very flavorful and juicy. A bit spicy but I loved it." },
-      { author: "Kamran H.", rating: 4, text: "Solid kebabs, great with fresh naan." }
-    ]
-  },
+  
   { id:4,  name:"Chicken Biryani", category:"Dinner", time:"1.5 hrs",
-    image:"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Biryani_of_Lahore.jpg/800px-Biryani_of_Lahore.jpg",
+    image:"https://upload.wikimedia.org/wikipedia/commons/7/7c/Hyderabadi_Chicken_Biryani.jpg",
     ingredients:["basmati rice","chicken","yogurt","onions","tomatoes","biryani masala","mint"],
     instructions:"Marinate chicken in yogurt and spices. Fry onions until brown. Cook chicken curry. Layer partially cooked rice over the curry, top with mint, and steam (dum) for 20 mins.",
     reviews: [
@@ -39,60 +21,51 @@ const recipes = [
       { author: "Tariq P.", rating: 4, text: "Very tasty. Could use a tiny bit more meat, but flavors are 10/10." }
     ]
   },
-  { id:5,  name:"Mutton Karahi", category:"Dinner", time:"1 hr",
-    image:"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Mutton_Karahi.jpg/800px-Mutton_Karahi.jpg",
-    ingredients:["mutton","tomatoes","green chilies","ginger","garlic","black pepper","oil"],
-    instructions:"Cook mutton until tender. In a wok (karahi), fry the meat on high heat with tomatoes, ginger, and garlic until oil separates. Garnish heavily with fresh ginger juliennes and chilies.",
+  { id: 5,  name: "Mutton Karahi", category: "Dinner", time: "1 hr",
+    image: "https://images.unsplash.com/photo-1603496987351-f84a3ba5ec85?auto=format&fit=crop&w=600&q=80",
+    ingredients: ["mutton","tomatoes","green chilies","ginger","garlic","black pepper","oil"],
+    instructions: "Cook mutton until tender. In a wok (karahi), fry the meat on high heat with tomatoes, ginger, and garlic until oil separates. Garnish heavily with fresh ginger juliennes and chilies.",
     reviews: [
       { author: "Nida F.", rating: 5, text: "Mutton melts in your mouth. Best karahi I've had outside." },
       { author: "Omer R.", rating: 4.5, text: "Excellent tomato base, perfectly balanced spices." },
       { author: "Mahnoor S.", rating: 4, text: "Really rich and heavy, exactly how a good karahi should be." }
     ]
   },
-  { id:6,  name:"Beef Nihari", category:"Dinner", time:"4 hrs",
-    image:"https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Nihari_with_naan.jpg/800px-Nihari_with_naan.jpg",
-    ingredients:["beef shank","bone marrow","nihari masala","wheat flour","onions","ghee"],
-    instructions:"Slow cook beef shanks and marrow bones with spices overnight or for 4 hours until extremely tender. Thicken the gravy with toasted wheat flour slurry. Serve with lemon and ginger.",
+  { id: 6,  name: "Beef Nihari", category: "Dinner", time: "4 hrs",
+    image: "https://images.unsplash.com/photo-1539755530862-00f623c00f52?auto=format&fit=crop&w=600&q=80",
+    ingredients: ["beef shank","bone marrow","nihari masala","wheat flour","onions","ghee"],
+    instructions: "Slow cook beef shanks and marrow bones with spices overnight or for 4 hours until extremely tender. Thicken the gravy with toasted wheat flour slurry. Serve with lemon and ginger.",
     reviews: [
       { author: "Fahad A.", rating: 5, text: "Incredibly tender meat and perfectly thick, rich gravy." },
       { author: "Zoya K.", rating: 4.5, text: "Very authentic flavor. Needs a fresh, hot kulcha!" },
       { author: "Waleed J.", rating: 4, text: "Great spice blend. Perfect for winter nights." }
     ]
   },
-  { id:7,  name:"Shahi Kheer", category:"Dessert", time:"1.5 hrs",
-    image:"https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Kheer_-_Indian_sweet_dish.jpg/800px-Kheer_-_Indian_sweet_dish.jpg",
-    ingredients:["milk","basmati rice","sugar","cardamom","almonds","pistachios","kewra water"],
-    instructions:"Slow boil milk until reduced. Add washed, crushed rice and cook until thick. Add sugar and cardamom. Garnish with chopped nuts and a few drops of kewra essence. Serve chilled.",
+  { id: 7,  name: "Shahi Kheer", category: "Dessert", time: "1.5 hrs",
+    image: "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?auto=format&fit=crop&w=600&q=80",
+    ingredients: ["milk","basmati rice","sugar","cardamom","almonds","pistachios","kewra water"],
+    instructions: "Slow boil milk until reduced. Add washed, crushed rice and cook until thick. Add sugar and cardamom. Garnish with chopped nuts and a few drops of kewra essence. Serve chilled.",
     reviews: [
       { author: "Sara Y.", rating: 5, text: "Perfectly sweet and creamy. The kewra gives a royal touch." },
       { author: "Ahmed L.", rating: 4.5, text: "Loved the consistency. Tastes like wedding kheer." },
       { author: "Maryam C.", rating: 4, text: "Very traditional and comforting dessert." }
     ]
   },
-  { id:8,  name:"Gulab Jamun", category:"Dessert", time:"40 min",
-    image:"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Gulab_Jamun_-_A_Traditional_Indian_Sweet.jpg/800px-Gulab_Jamun_-_A_Traditional_Indian_Sweet.jpg",
-    ingredients:["milk powder","ghee","milk","sugar","cardamom","rose water"],
-    instructions:"Make a soft dough using milk powder, ghee, and milk. Form into small, crack-free balls. Deep fry on very low heat until dark brown. Soak in warm rose-cardamom sugar syrup.",
-    reviews: [
-      { author: "Rizwan D.", rating: 5, text: "Soft, warm, and melts instantly. Best I've ever made." },
-      { author: "Anum G.", rating: 4.5, text: "Syrup was perfectly balanced, not overly sweet." },
-      { author: "Daniyal W.", rating: 4, text: "Great texture inside, soaked the syrup perfectly." }
-    ]
-  },
-  { id:9,  name:"Zarda (Sweet Rice)", category:"Dessert", time:"45 min",
-    image:"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Mutanjan_%28Zarda%29.jpg/800px-Mutanjan_%28Zarda%29.jpg",
-    ingredients:["sela basmati rice","sugar","food color","ghee","mixed nuts","ashrafi (candied fruit)"],
-    instructions:"Boil rice with yellow/orange food color until 90% done. In a separate pan, melt ghee, add cardamom and sugar to make a light syrup. Add rice, dum (steam) for 15 mins. Garnish with nuts.",
+  
+  { id: 9,  name: "Zarda (Sweet Rice)", category: "Dessert", time: "45 min",
+    image: "https://images.unsplash.com/photo-1633383718081-22ac93e3db65?auto=format&fit=crop&w=600&q=80",
+    ingredients: ["sela basmati rice","sugar","food color","ghee","mixed nuts","ashrafi (candied fruit)"],
+    instructions: "Boil rice with yellow/orange food color until 90% done. In a separate pan, melt ghee, add cardamom and sugar to make a light syrup. Add rice, dum (steam) for 15 mins. Garnish with nuts.",
     reviews: [
       { author: "Khadija E.", rating: 5, text: "Looks and tastes beautiful. The candied fruits were a great touch." },
       { author: "Jawad B.", rating: 4.5, text: "Classic dawati dessert. Rice grains were perfectly separated." },
       { author: "Amina U.", rating: 4, text: "Really good flavor, just the right amount of sweetness." }
     ]
   },
-  { id:10, name:"Samosa Chaat", category:"Snack", time:"20 min",
-    image:"https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Samosa_chaat.jpg/800px-Samosa_chaat.jpg",
-    ingredients:["potato samosas","chana masala","yogurt","tamarind chutney","mint chutney","onions"],
-    instructions:"Crush hot potato samosas onto a plate. Pour hot chana masala over them. Drizzle generously with whipped yogurt, sweet tamarind chutney, and spicy mint chutney. Top with chopped onions.",
+  { id: 10, name: "Samosa Chaat", category: "Snack", time: "20 min",
+    image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=80",
+    ingredients: ["potato samosas","chana masala","yogurt","tamarind chutney","mint chutney","onions"],
+    instructions: "Crush hot potato samosas onto a plate. Pour hot chana masala over them. Drizzle generously with whipped yogurt, sweet tamarind chutney, and spicy mint chutney. Top with chopped onions.",
     reviews: [
       { author: "Taha M.", rating: 5, text: "The perfect street food vibe! Chutneys are amazing." },
       { author: "Rida V.", rating: 4.5, text: "Spicy, sweet, and tangy all at once. Loved it." },
@@ -121,7 +94,7 @@ function createRecipeCard(recipe) {
   const card = el("article", "recipe-card"); card.dataset.id = recipe.id;
 
   const img = el("div", "card-image"); 
-  img.style.backgroundImage = `url(${recipe.image})`;
+  img.style.backgroundImage = `url("${recipe.image}")`;
   card.appendChild(img);
 
   const catTag = el("span", "card-category-tag", recipe.category);
@@ -179,7 +152,7 @@ function renderFavorites() {
     const fc = el("div", "fav-card"); fc.dataset.favId = r.id;
     
     const fImg = el("div", "fav-image");
-    fImg.style.backgroundImage = `url(${r.image})`;
+    fImg.style.backgroundImage = `url("${r.image}")`;
     fc.appendChild(fImg);
 
     fc.appendChild(el("h3",  "fav-name",  r.name));
@@ -231,7 +204,7 @@ function openModal(recipe) {
   modalContent.innerHTML = "";
   
   const mImg = el("div", "modal-image");
-  mImg.style.backgroundImage = `url(${recipe.image})`;
+  mImg.style.backgroundImage = `url("${recipe.image}")`;
   modalContent.appendChild(mImg);
   
   [el("span","modal-cat-tag",recipe.category), el("h2","modal-title",recipe.name)].forEach(n => modalContent.appendChild(n));
