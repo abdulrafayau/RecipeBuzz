@@ -41,16 +41,6 @@ const recipes = [
       { author: "Waleed J.", rating: 4, text: "Great spice blend. Perfect for winter nights." }
     ]
   },
-  { id: 7,  name: "Shahi Kheer", category: "Dessert", time: "1.5 hrs",
-    image: "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?auto=format&fit=crop&w=600&q=80",
-    ingredients: ["milk","basmati rice","sugar","cardamom","almonds","pistachios","kewra water"],
-    instructions: "Slow boil milk until reduced. Add washed, crushed rice and cook until thick. Add sugar and cardamom. Garnish with chopped nuts and a few drops of kewra essence. Serve chilled.",
-    reviews: [
-      { author: "Sara Y.", rating: 5, text: "Perfectly sweet and creamy. The kewra gives a royal touch." },
-      { author: "Ahmed L.", rating: 4.5, text: "Loved the consistency. Tastes like wedding kheer." },
-      { author: "Maryam C.", rating: 4, text: "Very traditional and comforting dessert." }
-    ]
-  },
   
   { id: 9,  name: "Zarda (Sweet Rice)", category: "Dessert", time: "45 min",
     image: "https://images.unsplash.com/photo-1633383718081-22ac93e3db65?auto=format&fit=crop&w=600&q=80",
