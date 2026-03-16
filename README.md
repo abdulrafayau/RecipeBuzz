@@ -29,7 +29,7 @@ A modern web browser (Chrome, Firefox, Safari, Edge).
 ### Installation
 1. Clone the repository to your local machine:
    ```bash
-   git clone [https://github.com/yourusername/recipebuzz.git](https://github.com/yourusername/recipebuzz.git)
+   git clone https://github.com/abdulrafayau/recipebuzz.git
 
 ```
 
