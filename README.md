@@ -79,9 +79,6 @@ This project is open-source and available under the [MIT License](https://www.go
 
 ---
 
-*Crafted with love & garlic.* 🧄
+*Crafted with love & garlic. :)* 🧄
 
-
-Would you like me to help you write the Git commands to push this directly to your GitHub repository, or are you all set with the code side of things?
-
-```
+abdulrafaydevau@gmail.com
