@@ -7,7 +7,7 @@ const recipes = [
     reviews: [
       { author: "Zainab B.", rating: 5, text: "Tastes just like my Ammi makes it! Perfectly stuffed." },
       { author: "Bilal M.", rating: 4.5, text: "Really good paratha. Best paired with mint raita." },
-      { author: "Sana A.", rating: 4, text: "Loved the crispy edges and generous filling." }
+      { author: "Hadia A.", rating: 4, text: "Loved the crispy edges and generous filling." }
     ]
   },
   
@@ -21,6 +21,7 @@ const recipes = [
       { author: "Tariq P.", rating: 4, text: "Very tasty. Could use a tiny bit more meat, but flavors are 10/10." }
     ]
   },
+  
   { id: 5,  name: "Mutton Karahi", category: "Dinner", time: "1 hr",
     image: "https://images.unsplash.com/photo-1603496987351-f84a3ba5ec85?auto=format&fit=crop&w=600&q=80",
     ingredients: ["mutton","tomatoes","green chilies","ginger","garlic","black pepper","oil"],
@@ -49,7 +50,7 @@ const recipes = [
     reviews: [
       { author: "Khadija E.", rating: 5, text: "Looks and tastes beautiful. The candied fruits were a great touch." },
       { author: "Jawad B.", rating: 4.5, text: "Classic dawati dessert. Rice grains were perfectly separated." },
-      { author: "Amina U.", rating: 4, text: "Really good flavor, just the right amount of sweetness." }
+      { author: "Osama .", rating: 4, text: "Really good flavor, just the right amount of sweetness." }
     ]
   },
   { id: 10, name: "Samosa Chaat", category: "Snack", time: "20 min",
@@ -57,7 +58,7 @@ const recipes = [
     ingredients: ["potato samosas","chana masala","yogurt","tamarind chutney","mint chutney","onions"],
     instructions: "Crush hot potato samosas onto a plate. Pour hot chana masala over them. Drizzle generously with whipped yogurt, sweet tamarind chutney, and spicy mint chutney. Top with chopped onions.",
     reviews: [
-      { author: "Taha M.", rating: 5, text: "The perfect street food vibe! Chutneys are amazing." },
+      { author: "Hassan M", rating: 5, text: "The perfect street food vibe! Chutneys are amazing." },
       { author: "Rida V.", rating: 4.5, text: "Spicy, sweet, and tangy all at once. Loved it." },
       { author: "Imran S.", rating: 4, text: "Great evening snack. Samosas stayed nicely crisp." }
     ]
