@@ -1,41 +1,104 @@
-
 const recipes = [
-  { id:1,  name:"Avocado Toast Deluxe",       category:"Breakfast", emoji:"🥑", color:"#6B8C6A", time:"10 min",
-    ingredients:["avocado","sourdough bread","cherry tomatoes","feta cheese","lemon","chili flakes"],
-    instructions:"Toast sourdough. Mash avocado with lemon, salt, pepper. Spread on toast, top with tomatoes, feta, chili flakes, olive oil." },
-  { id:2,  name:"Classic Shakshuka",           category:"Breakfast", emoji:"🍳", color:"#C9622F", time:"25 min",
-    ingredients:["eggs","canned tomatoes","bell pepper","onion","garlic","cumin","paprika"],
-    instructions:"Sauté onion and pepper. Add garlic and spices. Add tomatoes, simmer 10 min. Make wells, crack in eggs, cover until whites set." },
-  { id:3,  name:"Mango Chicken Salad",         category:"Lunch",     emoji:"🥗", color:"#E8A030", time:"20 min",
-    ingredients:["chicken breast","mango","mixed greens","cucumber","red onion","lime","honey"],
-    instructions:"Grill and slice chicken. Whisk lime, honey, oil for dressing. Toss greens, mango, cucumber, onion. Top with chicken, drizzle dressing." },
-  { id:4,  name:"Mushroom Ramen Bowl",         category:"Lunch",     emoji:"🍜", color:"#8B6914", time:"30 min",
-    ingredients:["ramen noodles","shiitake mushrooms","soy sauce","miso paste","soft-boiled egg","green onion","sesame oil"],
-    instructions:"Rehydrate mushrooms, reserve liquid. Sauté mushrooms. Combine liquid, miso, soy for broth. Cook noodles. Assemble with toppings." },
-  { id:5,  name:"Honey Garlic Salmon",         category:"Dinner",    emoji:"🐟", color:"#E8782F", time:"25 min",
-    ingredients:["salmon fillets","honey","garlic","soy sauce","butter","lemon","fresh dill"],
-    instructions:"Season salmon. Mix honey, garlic, soy, lemon for glaze. Sear 4 min, flip, glaze, bake 200°C for 6–8 min. Garnish with dill." },
-  { id:6,  name:"Creamy Tuscan Pasta",         category:"Dinner",    emoji:"🍝", color:"#C9622F", time:"30 min",
-    ingredients:["fettuccine","sun-dried tomatoes","spinach","heavy cream","parmesan","garlic","basil"],
-    instructions:"Cook fettuccine. Sauté garlic, add tomatoes, pour cream, simmer. Stir in parmesan. Add spinach. Toss pasta, top with basil." },
-  { id:7,  name:"Chocolate Lava Cake",         category:"Dessert",   emoji:"🍫", color:"#3D1A0A", time:"40 min",
-    ingredients:["dark chocolate","butter","eggs","sugar","flour","vanilla extract"],
-    instructions:"Melt chocolate and butter. Whisk eggs, yolks, sugar. Combine, fold in flour. Into ramekins, refrigerate 20 min. Bake 220°C for 12 min." },
-  { id:8,  name:"Mango Coconut Panna Cotta",   category:"Dessert",   emoji:"🥭", color:"#F5A623", time:"4.5 hrs",
-    ingredients:["coconut milk","mango","gelatin","sugar","vanilla bean","lime zest"],
-    instructions:"Bloom gelatin. Heat coconut milk with sugar and vanilla, whisk in gelatin. Chill 4 hrs. Blend mango coulis. Unmould and drizzle." },
-  { id:9,  name:"Spicy Guacamole & Chips",     category:"Snack",     emoji:"🫑", color:"#6B8C6A", time:"10 min",
-    ingredients:["avocado","jalapeño","lime","cilantro","red onion","tomato","tortilla chips"],
-    instructions:"Mash avocados. Mix in jalapeño, onion, tomato, lime, cilantro. Season. Serve with tortilla chips." },
-  { id:10, name:"Caprese Bruschetta",          category:"Snack",     emoji:"🍅", color:"#E8302F", time:"15 min",
-    ingredients:["baguette","fresh mozzarella","tomatoes","basil","balsamic glaze","olive oil","garlic"],
-    instructions:"Toast baguette, rub with garlic. Layer mozzarella and tomatoes. Drizzle olive oil and balsamic. Top with basil and sea salt." },
-  { id:11, name:"Korean Bibimbap",             category:"Dinner",    emoji:"🍲", color:"#C9331A", time:"45 min",
-    ingredients:["rice","beef","spinach","carrot","zucchini","egg","gochujang","sesame oil"],
-    instructions:"Cook rice. Marinate and stir-fry beef. Sauté vegetables separately. Fry egg. Assemble in bowl, top with egg, mix with gochujang." },
-  { id:12, name:"Greek Yogurt Parfait",        category:"Breakfast", emoji:"🫐", color:"#5A7A9C", time:"5 min",
-    ingredients:["greek yogurt","granola","blueberries","honey","chia seeds","mint"],
-    instructions:"Layer yogurt, granola, and blueberries. Drizzle honey, sprinkle chia seeds, garnish with mint. Serve immediately." }
+  { id:1,  name:"Halwa Puri", category:"Breakfast", time:"40 min", 
+    image:"https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=80",
+    ingredients:["all-purpose flour","semolina","sugar","chickpeas","potatoes","ghee","spices"],
+    instructions:"Knead dough for puris and fry until puffed. Make sweet semolina halwa with sugar syrup. Prepare spicy chickpea (chana) and potato (aloo) curry. Serve hot together.",
+    reviews: [
+      { author: "Ali R.", rating: 5, text: "Absolutely authentic and delicious! Sunday morning staple." },
+      { author: "Fatima S.", rating: 4.5, text: "Very good, reminds me of Anarkali. Chana was perfectly spiced." },
+      { author: "Usman K.", rating: 4, text: "Great taste, puris were perfectly crispy and soft inside." }
+    ]
+  },
+  { id:2,  name:"Aloo Paratha", category:"Breakfast", time:"25 min",
+    image:"https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=600&q=80",
+    ingredients:["whole wheat flour","potatoes","green chilies","coriander","cumin","butter"],
+    instructions:"Boil and mash potatoes, mix with spices and herbs. Stuff inside rolled dough, seal, and roll again. Cook on a hot tawa with butter until golden brown.",
+    reviews: [
+      { author: "Zainab B.", rating: 5, text: "Tastes just like my Ammi makes it! Perfectly stuffed." },
+      { author: "Bilal M.", rating: 4.5, text: "Really good paratha. Best paired with mint raita." },
+      { author: "Sana A.", rating: 4, text: "Loved the crispy edges and generous filling." }
+    ]
+  },
+  { id:3,  name:"Chapli Kebab", category:"Lunch", time:"30 min",
+    image:"https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=600&q=80",
+    ingredients:["minced beef","tomatoes","onions","coriander seeds","pomegranate seeds","wheat flour"],
+    instructions:"Mix minced meat with chopped veggies and dry spices. Form into flat, round patties. Shallow fry in hot oil until crispy on the outside and juicy inside.",
+    reviews: [
+      { author: "Hamza T.", rating: 5, text: "True Peshawari taste! The anardana crunch is perfect." },
+      { author: "Ayesha N.", rating: 4.5, text: "Very flavorful and juicy. A bit spicy but I loved it." },
+      { author: "Kamran H.", rating: 4, text: "Solid kebabs, great with fresh naan." }
+    ]
+  },
+  { id:4,  name:"Chicken Biryani", category:"Dinner", time:"1.5 hrs",
+    image:"https://images.unsplash.com/photo-1589302168068-964664d93cb0?auto=format&fit=crop&w=600&q=80",
+    ingredients:["basmati rice","chicken","yogurt","onions","tomatoes","biryani masala","mint"],
+    instructions:"Marinate chicken in yogurt and spices. Fry onions until brown. Cook chicken curry. Layer partially cooked rice over the curry, top with mint, and steam (dum) for 20 mins.",
+    reviews: [
+      { author: "Saad Q.", rating: 5, text: "The aroma is incredible. Authentic Karachi style biryani!" },
+      { author: "Hira M.", rating: 4.5, text: "Spice level was perfect. Rice grains were separate and fluffy." },
+      { author: "Tariq P.", rating: 4, text: "Very tasty. Could use a tiny bit more meat, but flavors are 10/10." }
+    ]
+  },
+  { id:5,  name:"Mutton Karahi", category:"Dinner", time:"1 hr",
+    image:"https://images.unsplash.com/photo-1603496987351-f84a3ba5ec85?auto=format&fit=crop&w=600&q=80",
+    ingredients:["mutton","tomatoes","green chilies","ginger","garlic","black pepper","oil"],
+    instructions:"Cook mutton until tender. In a wok (karahi), fry the meat on high heat with tomatoes, ginger, and garlic until oil separates. Garnish heavily with fresh ginger juliennes and chilies.",
+    reviews: [
+      { author: "Nida F.", rating: 5, text: "Mutton melts in your mouth. Best karahi I've had outside." },
+      { author: "Omer R.", rating: 4.5, text: "Excellent tomato base, perfectly balanced spices." },
+      { author: "Mahnoor S.", rating: 4, text: "Really rich and heavy, exactly how a good karahi should be." }
+    ]
+  },
+  { id:6,  name:"Beef Nihari", category:"Dinner", time:"4 hrs",
+    image:"https://images.unsplash.com/photo-1539755530862-00f623c00f52?auto=format&fit=crop&w=600&q=80",
+    ingredients:["beef shank","bone marrow","nihari masala","wheat flour","onions","ghee"],
+    instructions:"Slow cook beef shanks and marrow bones with spices overnight or for 4 hours until extremely tender. Thicken the gravy with toasted wheat flour slurry. Serve with lemon and ginger.",
+    reviews: [
+      { author: "Fahad A.", rating: 5, text: "Incredibly tender meat and perfectly thick, rich gravy." },
+      { author: "Zoya K.", rating: 4.5, text: "Very authentic flavor. Needs a fresh, hot kulcha!" },
+      { author: "Waleed J.", rating: 4, text: "Great spice blend. Perfect for winter nights." }
+    ]
+  },
+  { id:7,  name:"Shahi Kheer", category:"Dessert", time:"1.5 hrs",
+    image:"https://images.unsplash.com/photo-1574894709920-11b28e7367e3?auto=format&fit=crop&w=600&q=80",
+    ingredients:["milk","basmati rice","sugar","cardamom","almonds","pistachios","kewra water"],
+    instructions:"Slow boil milk until reduced. Add washed, crushed rice and cook until thick. Add sugar and cardamom. Garnish with chopped nuts and a few drops of kewra essence. Serve chilled.",
+    reviews: [
+      { author: "Sara Y.", rating: 5, text: "Perfectly sweet and creamy. The kewra gives a royal touch." },
+      { author: "Ahmed L.", rating: 4.5, text: "Loved the consistency. Tastes like wedding kheer." },
+      { author: "Maryam C.", rating: 4, text: "Very traditional and comforting dessert." }
+    ]
+  },
+  { id:8,  name:"Gulab Jamun", category:"Dessert", time:"40 min",
+    image:"https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=600&q=80",
+    ingredients:["milk powder","ghee","milk","sugar","cardamom","rose water"],
+    instructions:"Make a soft dough using milk powder, ghee, and milk. Form into small, crack-free balls. Deep fry on very low heat until dark brown. Soak in warm rose-cardamom sugar syrup.",
+    reviews: [
+      { author: "Rizwan D.", rating: 5, text: "Soft, warm, and melts instantly. Best I've ever made." },
+      { author: "Anum G.", rating: 4.5, text: "Syrup was perfectly balanced, not overly sweet." },
+      { author: "Daniyal W.", rating: 4, text: "Great texture inside, soaked the syrup perfectly." }
+    ]
+  },
+  { id:9,  name:"Zarda (Sweet Rice)", category:"Dessert", time:"45 min",
+    image:"https://images.unsplash.com/photo-1633383718081-22ac93e3db65?auto=format&fit=crop&w=600&q=80",
+    ingredients:["sela basmati rice","sugar","food color","ghee","mixed nuts","ashrafi (candied fruit)"],
+    instructions:"Boil rice with yellow/orange food color until 90% done. In a separate pan, melt ghee, add cardamom and sugar to make a light syrup. Add rice, dum (steam) for 15 mins. Garnish with nuts.",
+    reviews: [
+      { author: "Khadija E.", rating: 5, text: "Looks and tastes beautiful. The candied fruits were a great touch." },
+      { author: "Jawad B.", rating: 4.5, text: "Classic dawati dessert. Rice grains were perfectly separated." },
+      { author: "Amina U.", rating: 4, text: "Really good flavor, just the right amount of sweetness." }
+    ]
+  },
+  { id:10, name:"Samosa Chaat", category:"Snack", time:"20 min",
+    image:"https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=80",
+    ingredients:["potato samosas","chana masala","yogurt","tamarind chutney","mint chutney","onions"],
+    instructions:"Crush hot potato samosas onto a plate. Pour hot chana masala over them. Drizzle generously with whipped yogurt, sweet tamarind chutney, and spicy mint chutney. Top with chopped onions.",
+    reviews: [
+      { author: "Taha M.", rating: 5, text: "The perfect street food vibe! Chutneys are amazing." },
+      { author: "Rida V.", rating: 4.5, text: "Spicy, sweet, and tangy all at once. Loved it." },
+      { author: "Imran S.", rating: 4, text: "Great evening snack. Samosas stayed nicely crisp." }
+    ]
+  }
 ];
 
 let favorites = JSON.parse(localStorage.getItem("ff_favorites")) || [];
@@ -57,8 +120,8 @@ const showMsg = msg => searchMessage.textContent = msg;
 function createRecipeCard(recipe) {
   const card = el("article", "recipe-card"); card.dataset.id = recipe.id;
 
-  const img = el("div", "card-image"); img.textContent = recipe.emoji;
-  img.style.background = recipe.color + "22";
+  const img = el("div", "card-image"); 
+  img.style.backgroundImage = `url(${recipe.image})`;
   card.appendChild(img);
 
   const catTag = el("span", "card-category-tag", recipe.category);
@@ -115,7 +178,11 @@ function renderFavorites() {
   favorites.forEach(id => {
     const r = recipes.find(x => x.id === id); if (!r) return;
     const fc = el("div", "fav-card"); fc.dataset.favId = r.id;
-    fc.appendChild(el("span", "fav-emoji", r.emoji));
+    
+    const fImg = el("div", "fav-image");
+    fImg.style.backgroundImage = `url(${r.image})`;
+    fc.appendChild(fImg);
+
     fc.appendChild(el("h3",  "fav-name",  r.name));
     fc.appendChild(el("p",   "fav-cat",   r.category));
     const rmBtn = el("button", "btn-remove", "✕ Remove");
@@ -163,14 +230,41 @@ function removeFromFav(id) {
 
 function openModal(recipe) {
   modalContent.innerHTML = "";
-  [el("div","modal-emoji",recipe.emoji), el("span","modal-cat-tag",recipe.category), el("h2","modal-title",recipe.name)].forEach(n => modalContent.appendChild(n));
+  
+  const mImg = el("div", "modal-image");
+  mImg.style.backgroundImage = `url(${recipe.image})`;
+  modalContent.appendChild(mImg);
+  
+  [el("span","modal-cat-tag",recipe.category), el("h2","modal-title",recipe.name)].forEach(n => modalContent.appendChild(n));
   const meta = el("p"); meta.style.cssText = "font-size:.82rem;color:#888;margin-bottom:1.5rem;text-transform:uppercase;letter-spacing:.05em"; meta.textContent = `⏱ ${recipe.time}`; modalContent.appendChild(meta);
+  
   modalContent.appendChild(el("p","modal-section-head","Ingredients"));
   const ul = el("ul","modal-ingredients");
   recipe.ingredients.forEach(i => { const li = el("li","",i); ul.appendChild(li); });
   modalContent.appendChild(ul);
+  
   modalContent.appendChild(el("p","modal-section-head","Instructions"));
   modalContent.appendChild(el("p","modal-instructions",recipe.instructions));
+
+  // --- NEW: Customer Reviews Rendering ---
+  modalContent.appendChild(el("p", "modal-section-head", "Customer Reviews"));
+  const revWrap = el("div", "reviews-container");
+  recipe.reviews.forEach((rev, i) => {
+    const rc = el("div", "review-card");
+    rc.style.animationDelay = `${i * 0.12}s`;
+    
+    // Generate Stars (e.g. 4.5 = ★★★★½)
+    const starString = "★".repeat(Math.floor(rev.rating)) + (rev.rating % 1 !== 0 ? "½" : "");
+    const stars = el("div", "review-stars", starString);
+    
+    const author = el("div", "review-author", rev.author);
+    const text = el("div", "review-text", `"${rev.text}"`);
+    rc.append(stars, author, text);
+    revWrap.appendChild(rc);
+  });
+  modalContent.appendChild(revWrap);
+  // ----------------------------------------
+
   modalOverlay.classList.add("open"); document.body.style.overflow = "hidden";
 }
 
